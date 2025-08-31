@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Name — Portfolio</title>
+  <title>Yedidya Bar-Gad — Portfolio</title>
   <meta name="description" content="Portfolio showcasing projects">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-H1f1XzCgZk++D3bG4FJ9V3F1sWJr1w2On8cq4VZyYkqHh61ZQFF7rZkzPO8QJm1Z0p0vSzN0gZ7X5u+0QyI2mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -433,55 +433,26 @@
     /* Skills */
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
       gap: 40px;
       margin-top: 60px;
+      justify-items: center;
+      align-items: center;
     }
 
-    .skill-item {
-      text-align: center;
-      padding: 32px 24px;
-      background: var(--card);
-      border-radius: 20px;
-      border: 1px solid var(--border);
-      transition: all 0.4s ease;
-      cursor: pointer;
-    }
-
-    body.light .skill-item {
-      background: var(--light-card);
-      border: 1px solid var(--light-border);
-    }
-
-    .skill-item:hover {
-      transform: translateY(-8px) rotate(5deg);
-      box-shadow: var(--shadow-hover);
-      background: var(--card-hover);
-    }
-
-    body.light .skill-item:hover {
-      background: var(--light-card-hover);
-    }
-
-    .skill-item i {
-      font-size: 3rem;
+    .skills-grid i {
+      font-size: 4rem;
       color: var(--accent);
-      margin-bottom: 16px;
-      transition: all 0.3s ease;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+      opacity: 0.8;
     }
 
-    .skill-item:hover i {
-      transform: scale(1.2);
+    .skills-grid i:hover {
+      transform: translateY(-8px) scale(1.2);
       color: var(--accent-secondary);
-    }
-
-    .skill-name {
-      font-weight: 600;
-      color: var(--text);
-    }
-
-    body.light .skill-name {
-      color: var(--light-text);
+      opacity: 1;
+      filter: drop-shadow(0 8px 16px rgba(99, 102, 241, 0.4));
     }
 
     /* Contact */
@@ -625,7 +596,7 @@
   <header>
     <div class="container">
       <nav>
-        <div class="logo">Your Name</div>
+        <div class="logo">Yedidya Bar-Gad</div>
         <div class="nav-links">
           <a href="#home">Home</a>
           <a href="#projects">Projects</a>
@@ -641,7 +612,7 @@
 
   <section id="home" class="hero">
     <div class="hero-content">
-      <h1>Your Name</h1>
+      <h1>Yedidya Bar-Gad</h1>
       <p>Crafting digital experiences with modern technology</p>
       <div class="cta-buttons">
         <a href="#projects" class="cta-btn primary">View My Work</a>
@@ -661,30 +632,13 @@
     <div class="container">
       <h2 class="section-title">Skills & Technologies</h2>
       <div class="skills-grid">
-        <div class="skill-item">
-          <i class="fab fa-react"></i>
-          <div class="skill-name">React</div>
-        </div>
-        <div class="skill-item">
-          <i class="fab fa-node-js"></i>
-          <div class="skill-name">Node.js</div>
-        </div>
-        <div class="skill-item">
-          <i class="fab fa-python"></i>
-          <div class="skill-name">Python</div>
-        </div>
-        <div class="skill-item">
-          <i class="fas fa-database"></i>
-          <div class="skill-name">Databases</div>
-        </div>
-        <div class="skill-item">
-          <i class="fab fa-aws"></i>
-          <div class="skill-name">Cloud</div>
-        </div>
-        <div class="skill-item">
-          <i class="fab fa-docker"></i>
-          <div class="skill-name">Docker</div>
-        </div>
+        <i class="fab fa-python" title="Python"></i>
+        <i class="fa-brands fa-golang" title="Go"></i>
+        <i class="fab fa-js-square" title="Java"></i>
+        <i class="fas fa-database" title="Database"></i>
+        <i class="fab fa-docker" title="Docker"></i>
+        <i class="fab fa-azure" title="Azure"></i>
+        <i class="fab fa-git-alt" title="Git"></i>
       </div>
     </div>
   </section>
@@ -703,9 +657,9 @@
           </div>
         </a>
         
-        <a href="https://github.com/yourusername" target="_blank" class="contact-item">
+        <a href="https://github.com/yedidyabargad" target="_blank" class="contact-item">
           <div class="contact-icon">
-            <i class="fab fa-github"></i>
+            <i class="fa-brands fa-github"></i>
           </div>
           <div class="contact-text">
             <h3>GitHub</h3>
@@ -713,9 +667,9 @@
           </div>
         </a>
         
-        <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-item">
+        <a href="https://linkedin.com/in/yedidya-bar-gad" target="_blank" class="contact-item">
           <div class="contact-icon">
-            <i class="fab fa-linkedin"></i>
+            <i class="fa-brands fa-linkedin"></i>
           </div>
           <div class="contact-text">
             <h3>LinkedIn</h3>
@@ -738,7 +692,7 @@
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 Your Name. Built with passion and modern web technologies.</p>
+      <p>&copy; 2025 Yedidya Bar-Gad. Built with passion and modern web technologies.</p>
     </div>
   </footer>
 
@@ -746,46 +700,18 @@
     // Sample projects data
     const projects = [
       {
-        title: 'E-Commerce Platform',
-        desc: 'A full-stack e-commerce solution built with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.',
-        tags: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
+        title: 'Ray Tracing Project',
+        desc: 'This project is a comprehensive Java-based ray tracing engine for rendering complex 3D scenes with advanced acceleration structures. It features multi-threading for performance optimization and supports various materials and lighting models.',
+        tags: ['Java', 'XML'],
         img: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop',
-        links: { demo: '#', code: '#' }
+        links: { code: 'https://github.com/YedidyaBarGad/Ray-Tracing-Project' }
       },
       {
-        title: 'AI Chat Application',
-        desc: 'Real-time chat application with AI integration using OpenAI API. Built with WebSocket for instant messaging and modern UI components.',
-        tags: ['React', 'WebSocket', 'OpenAI', 'Firebase'],
+        title: 'Aegis Vault',
+        desc: 'Aegis vault is a lightweight, secure, and user-friendly password manager written in Go. It allows you to store, retrieve, update, and delete login credentials encrypted with a master password using modern cryptography. It provides both a command-line interface (CLI) for quick actions and a web interface for visual management.',
+        tags: ['Golang', 'Docker', 'HTML', 'Javascript', 'CSS'],
         img: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop',
-        links: { demo: '#', code: '#' }
-      },
-      {
-        title: 'Data Visualization Dashboard',
-        desc: 'Interactive dashboard for data analysis with charts, filters, and real-time updates. Built with D3.js and modern web technologies.',
-        tags: ['React', 'D3.js', 'Python', 'FastAPI'],
-        img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
-        links: { demo: '#', code: '#' }
-      },
-      {
-        title: 'Mobile Fitness App',
-        desc: 'Cross-platform fitness tracking app with workout plans, progress tracking, and social features. Built with React Native.',
-        tags: ['React Native', 'Firebase', 'Redux', 'Expo'],
-        img: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop',
-        links: { demo: '#', code: '#' }
-      },
-      {
-        title: 'Blockchain Voting System',
-        desc: 'Secure voting platform using blockchain technology. Ensures transparency and immutability of votes with smart contracts.',
-        tags: ['Solidity', 'Web3', 'React', 'Ethereum'],
-        img: 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=600&h=400&fit=crop',
-        links: { demo: '#', code: '#' }
-      },
-      {
-        title: 'Portfolio Website',
-        desc: 'This modern portfolio website featuring glassmorphism design, smooth animations, and responsive layout.',
-        tags: ['HTML', 'CSS', 'JavaScript', 'Design'],
-        img: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop',
-        links: { demo: '#', code: '#' }
+        links: { demo: 'https://aegis-vault.onrender.com/', code: 'https://github.com/YedidyaBarGad/Aegis_vault' }
       }
     ];
 
