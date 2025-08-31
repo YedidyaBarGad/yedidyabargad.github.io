@@ -432,29 +432,54 @@
     }
 
     /* Skills */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-      gap: 40px;
-      margin-top: 60px;
-      justify-items: center;
-      align-items: center;
-    }
+  .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+  justify-items: center;
+  align-items: center;
+}
 
-    .skills-grid i {
-      font-size: 4rem;
-      color: var(--accent);
-      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-      cursor: pointer;
-      opacity: 0.8;
-    }
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
-    .skills-grid i:hover {
-      transform: translateY(-8px) scale(1.2);
-      color: var(--accent-secondary);
-      opacity: 1;
-      filter: drop-shadow(0 8px 16px rgba(99, 102, 241, 0.4));
-    }
+.skill i {
+  font-size: 4rem;
+  color: var(--accent);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.skill i:hover {
+  transform: translateY(-8px) scale(1.2);
+  opacity: 1;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
+}
+
+/* Brand-specific hover colors */
+.skill .fa-python:hover { color: #3776AB; }
+.skill .fa-code:hover { color: #00ADD8; }
+.skill .fa-coffee:hover { color: #E76F00; }
+.skill .fa-database:hover { color: #4DB33D; }
+.skill .fa-docker:hover { color: #2496ED; }
+.skill .fa-microsoft:hover { color: #0078D4; }
+.skill .fa-git-alt:hover { color: #F1502F; }
+.skill .fa-js-square:hover { color: #F7DF1E; }
+
+.skill span {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+
 
     /* Contact */
     .contact-grid {
@@ -629,21 +654,46 @@
     </div>
   </section>
 
-    <section id="skills">
-    <div class="container">
-      <h2 class="section-title">Skills & Technologies</h2>
-      <div class="skills-grid">
-        <i class="fab fa-python" title="Python"></i>
-        <i class="fas fa-code" title="Go"></i>
-        <i class="fas fa-coffee" title="Java"></i>
-        <i class="fas fa-database" title="Database"></i>
-        <i class="fab fa-docker" title="Docker"></i>
-        <i class="fab fa-microsoft" title="Azure"></i>
-        <i class="fab fa-git-alt" title="Git"></i>
-        <i class="fab fa-js-square" title="JavaScript"></i>
+   <section id="skills">
+  <div class="container">
+    <h2 class="section-title">Skills & Technologies</h2>
+    <div class="skills-grid">
+      <div class="skill">
+        <i class="fab fa-python"></i>
+        <span>Python</span>
+      </div>
+      <div class="skill">
+        <i class="fas fa-code"></i>
+        <span>Go</span>
+      </div>
+      <div class="skill">
+        <i class="fas fa-coffee"></i>
+        <span>Java</span>
+      </div>
+      <div class="skill">
+        <i class="fas fa-database"></i>
+        <span>Database</span>
+      </div>
+      <div class="skill">
+        <i class="fab fa-docker"></i>
+        <span>Docker</span>
+      </div>
+      <div class="skill">
+        <i class="fab fa-microsoft"></i>
+        <span>Azure</span>
+      </div>
+      <div class="skill">
+        <i class="fab fa-git-alt"></i>
+        <span>Git</span>
+      </div>
+      <div class="skill">
+        <i class="fab fa-js-square"></i>
+        <span>JavaScript</span>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
 
   <section id="contact">
@@ -706,14 +756,14 @@
         title: 'Ray Tracing Project',
         desc: 'This project is a comprehensive Java-based ray tracing engine for rendering complex 3D scenes with advanced acceleration structures. It features multi-threading for performance optimization and supports various materials and lighting models.',
         tags: ['Java', 'XML'],
-        img: 'https://gifyu.com/image/bTHbB',
+        img: 'https://s14.gifyu.com/images/bTHbB.jpg',
         links: { code: 'https://github.com/YedidyaBarGad/Ray-Tracing-Project' }
       },
       {
         title: 'Aegis Vault',
         desc: 'Aegis vault is a lightweight, secure, and user-friendly password manager written in Go. It allows you to store, retrieve, update, and delete login credentials encrypted with a master password using modern cryptography. It provides both a command-line interface (CLI) for quick actions and a web interface for visual management.',
         tags: ['Golang', 'Docker', 'HTML', 'Javascript', 'CSS'],
-        img: 'https://gifyu.com/image/bTHSB',
+        img: 'https://s14.gifyu.com/images/bTHSB.png',
         links: { demo: 'https://aegis-vault.onrender.com/', code: 'https://github.com/YedidyaBarGad/Aegis_vault' }
       }
     ];
