@@ -28,7 +28,7 @@ It showcases my projects, skills, and contact information with an elegant dark/l
 
 ## 📸 Preview
 
-![Portfolio Preview](https://s14.gifyu.com/images/bTHSB.png)
+![Portfolio Preview](https://s14.gifyu.com/images/bTHM6.png)
 
 ---
 
